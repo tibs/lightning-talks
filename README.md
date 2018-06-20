@@ -1,2 +1,0 @@
-# lightning-talks
-Lightning talks
