@@ -29,6 +29,10 @@ https://codepoints.net/U+02BC
       * It denotes a glottal stop (IPA /ʔ/) in orthographies of many languages, such as Nenets.
       * It is encoded at U+02BC ʼ modifier letter apostrophe (HTML &#700;).
 
+https://en.wikipedia.org/wiki/Modifier_letter_apostrophe
 
+https://unicode-table.com/en/02BC/
+
+Ollie's review: No
 
 .. vim: set filetype=rst tabstop=8 softtabstop=2 shiftwidth=2 expandtab:
