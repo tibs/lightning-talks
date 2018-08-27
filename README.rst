@@ -15,4 +15,5 @@ Lightning talks.
    :alt: CC-Attribution-ShareAlike image
 
 .. _`Creative Commons Attribution-ShareAlike 4.0 International License`: http://creativecommons.org/licenses/by-sa/4.0/
+
 .. vim: set filetype=rst tabstop=8 softtabstop=2 shiftwidth=2 expandtab:

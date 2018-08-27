@@ -152,6 +152,10 @@ Converted to PDF slides using pandoc_ and beamer_.
 .. _pandoc: https://pandoc.org
 .. _beamer: https://github.com/josephwright/beamer
 
+https://en.wikipedia.org/wiki/Modifier_letter_apostrophe
 
+https://unicode-table.com/en/02BC/
+
+Ollie's review: No
 
 .. vim: set filetype=rst tabstop=8 softtabstop=2 shiftwidth=2 expandtab:
