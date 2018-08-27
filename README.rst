@@ -2,6 +2,8 @@
 Lightning talks
 ===============
 
+Lightning talks.
+
 --------
 
   |cc-attr-sharealike|

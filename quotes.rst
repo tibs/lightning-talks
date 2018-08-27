@@ -1,20 +1,17 @@
-:title: Lightning talk
-
-----
-
-Lightning Talk
-==============
+Quotation marks: A lightning talk
+---------------------------------
 
 By Tibs / Tony Ibbs, for CamPUG Dec 2017
 
-Written using reStructuredText_.  Presented using hovercraft_.
+Sources at https://github.com/tibs/lightning-talks
+
+Written using reStructuredText_.  Originally presented using hovercraft_.
+Converted to PDF slides using pandoc_ and beamer_.
 
 .. _reStructuredText: http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html
+.. _pandoc: https://pandoc.org
+.. _beamer: https://github.com/josephwright/beamer
 .. _hovercraft: https://github.com/regebro/hovercraft
-
-----
-
-**Quotation marks**
 
 ----
 
@@ -60,8 +57,8 @@ when you can do:
 
 .. """ - to make the parser in Vim happier after those 4 double quotes
 
-.. note:: But if you do that, be aware that some people will probably look at
-   you a bit oddly.
+(But if you do that, be aware that some people will probably look at you a bit
+oddly.)
 
 ----
 
@@ -79,7 +76,6 @@ or even (except for the ignoring line breaks thing):
     """..."""
     '''..."""
     
-
 ----
 
 Which should you use if there's no reason to choose?
@@ -88,93 +84,22 @@ Which should you use if there's no reason to choose?
 * ``'`` doesn't need a shift key on QWERTY english keyboards
 * Personally, I think
   
-   * ``"some messsage about 'word'"`` looks better with ``'word'``
-   * Using ``"""`` for single line strings looks odd.
-   * I don't much like ``'''``.
+  * ``"some messsage about 'word'"`` looks better with ``'word'``
+  * Using ``"""`` for single line strings looks odd.
+  * I don't much like ``'''``.
 
-.. note:: But basically, don't worry too much about it.
-
-----
-
-**String and repr**
-
-----
-
-Don't do:
-
-.. code:: python
-
-    logger.error('Key %s has value \'%s\'', key, value)
-
-or even:
-
-.. code:: python
-
-    logger.error("Key %s has value '%s'", key, value)
-
-Do:
-
-.. code:: python
-
-    logger.error("Key %s has value %r", key, value)
-
-----
-
-Why? Because it's useful to distinguish::
-
-    Key Fred has value 1
-
-from::
-
-    Key Fred has value '1'
-
-----
-
-Similarly, don't do:
-
-.. code:: python
-
-    print("Key {} has value '{}'".format(key, value))
-
-but do:
-
-.. code:: python
-
-    print("Key {} has value {!r}".format(key, value))
-
-.. note:: Remember there's a whole little language that can be used after
-   that ``!`` character.
-
-----
-
-And actually, strongly consider:
-
-.. code:: python
-
-    print(f'Key {key} has value {value!r}')
-
-.. note:: ``f`` strings turn out to be really nice - they remove a lot of
-   repetition, and even allow simple expressions inside the curly braces.
-   But their killer use is just as above, for very simple strings.
-
-----
-
-And, by the way, don't forget:
-
-.. code:: python
-
-    logger.exception('The mouse appears to be spinning')
-
-.. note:: Which takes care of logging all the exception details for you,
-   as an error.
+(But basically, don't worry too much about it.)
 
 ----
 
 Fin
-===
+---
 
 By Tibs / Tony Ibbs, for CamPUG Dec 2017
 
-Written using reStructuredText_.  Presented using hovercraft_.
+Sources at https://github.com/tibs/lightning-talks
+
+Written using reStructuredText_.  Originally presented using hovercraft_.
+Converted to PDF slides using pandoc_ and beamer_.
 
 .. vim: set filetype=rst tabstop=8 softtabstop=2 shiftwidth=2 expandtab:
